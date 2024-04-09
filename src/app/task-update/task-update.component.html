@@ -1,0 +1,6 @@
+<form *ngIf="task" (ngSubmit)="updateTask()">
+    <input *ngIf="task" type="text" name="title" [(ngModel)]="task.title" placeholder="Title">
+    <input *ngIf="task" type="text" name="description" [(ngModel)]="task.description" placeholder="Description">
+    <button type="submit">Update Task</button>
+  </form>
+  
